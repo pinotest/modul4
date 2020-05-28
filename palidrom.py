@@ -12,11 +12,8 @@ def check_palidrom(text):
     Argument: string
     Returns True if given string is a palindrome - string that you can read forehead or reverse with the same meaning eg. level, 101.  
     '''
-    return any(False if text[i].lower() != text[-i-1].lower() else True for i in range(len(text)//2))
-
-print((check_palidrom_first("Kajak")))
+    return not(any([True for i in range(len(text)//2) if text[i].lower() != text[-i-1].lower()]))
 
 print((check_palidrom("Kajak")))
-
-# print(check_palidrom_sec("112"))
-# print(check_palidrom_sec("1"))
+print((check_palidrom("sedeS")))
+print((check_palidrom("Kark")))
