@@ -9,7 +9,7 @@ def check_palidrom_first(text):
 def check_palidrom(text):
     '''
     check_palidrom(string)
-
+    Argument: string
     Returns True if given string is a palindrome - string that you can read forehead or reverse with the same meaning eg. level, 101.  
     '''
     return any(False if text[i].lower() != text[-i-1].lower() else True for i in range(len(text)//2))
