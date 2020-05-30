@@ -14,6 +14,13 @@ def check_palidrom(text):
     '''
     return not(any([True for i in range(len(text)//2) if text[i].lower() != text[-i-1].lower()]))
 
-print((check_palidrom("Kajak")))
-print((check_palidrom("sedeS")))
-print((check_palidrom("Kark")))
+#third solution 
+def check_palidrom_three(text):
+    '''
+    check_palidrom(string)
+    Argument: string
+    Returns True if given string is a palindrome - string that you can read forehead or reverse with the same meaning eg. level, 101.  
+    '''
+    return (text[::-1]).lower() == text.lower()
+
+print(check_palidrom_three("Sedses"))
