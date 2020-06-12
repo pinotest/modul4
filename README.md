@@ -1,8 +1,15 @@
 # module4
-Tasks from module 4 of bootcamp
+Tasks from module 4 of bootcamp. Implementation of function palidrome which checked tath given string is palidrom or not.
+If string is a palidrom - function returns TRUE if not FALSE;
 
 ## Getting Started
-This is only one file with one function, so only download to your PC.
+This is only one file with three functions, so only download to your PC.
+To check that given string is a palidrome you should call one of the function:
+- check_palidrom_first
+- check_palidrom
+- check_palidrom_three
+with one argument string.
+Each of the given functions works the same way but with a diferent implementation. The third version of function (check_palidrom_three) is implemented the shortest code  
 
 ### Prerequisites
 You should have a python 3.x on your PC.
